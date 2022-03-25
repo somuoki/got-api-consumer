@@ -53,7 +53,7 @@ class ConsumeController extends Controller
             'pageSize' => 100
         ];
 
-        return view('house', [
+        return view('houses', [
             'houses' => $this->fetchData('houses', $data),
             'title' => ['title' => 'All Houses']
         ]);
