@@ -23,8 +23,8 @@ class Controller extends BaseController
     public function fetchData($category, $query = null){
         $client = new Client([
             // Base URI is used with relative requests
-//            "base_uri" => "https://topup-ice.herokuapp.com/books",
-            'base_uri' => 'http://localhost:8000/'.$category,
+            "base_uri" => "https://topup-ice.herokuapp.com/books",
+            
             // You can set any number of default request options.
             "timeout"  => 50.0,
             'retry' => 4,
